@@ -1,13 +1,14 @@
 var id = setInterval("Time()",1000);
 var counter = 0;
+var score = 0;
 function Time(){
 	counter++;
-	if(counter == 5) alert("Game is over! " + counter + " seconds played"), clearInterval(id); 
+	if(counter == 5) alert("Game is over! " + counter + " seconds played and your score is " + score), clearInterval(id); 
 	typer.stop();
 }
 
 
-function promptMe(){
+function Name(){
     var userAdjective = prompt("Please enter your name!");
     alert (userAdjective); 
 	typer.start();
@@ -78,6 +79,7 @@ TYPER.prototype = {
   },
   
   stop : function() {
+	  
   },
 
   generateWord: function () {
@@ -93,6 +95,7 @@ TYPER.prototype = {
 
     if (letter === this.word.left.charAt(0)) {
       this.word.removeFirstLetter()
+	  score++;
 
       if (this.word.left.length === 0) {
         this.guessedWords += 1
