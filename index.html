@@ -1,27 +1,42 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <title>typer</title>
-	<button id="bgnBtn" onclick="promptMe()">Start Game</button>
-    <style> 
-      * {
-        margin: 0;
-        padding: 0;
-      }
-      html, body, canvas {
-        width: 100%;
-        height: 100%;
-      }
-      
-      canvas {
-        position: absolute;
-      }
-    </style>
-    <script src="app.js"></script>
-	<div id="clock"></div>
-  </head>
-  <body>
-    <canvas></canvas>
-  </body>
-</html>
+<div id = 'page01'>
+	<h1>Menu</h1>
+		<a href = '#' onclick = "document.getElementById('page01').style.display='none'; document.getElementById('page02').style.display='block';">Start game</a><br>
+		<a href = '#' onclick = "document.getElementById('page01').style.display='none'; document.getElementById('page03').style.display='block';">Instruktion</a><br>
+		<a href = '#' onclick = "document.getElementById('page01').style.display='none'; document.getElementById('page04').style.display='block';">Top10</a><br>
+		<div class="name" id="name">Name:
+		<input type="text" id="nameText">
+		</div>
+</div>
+<div id = 'page02' style='display: none'>
+	<h1>Typer</h1>
+		</style>
+		<script src="app.js"></script>
+		<div id="clock"></div>
+		<canvas></canvas>
+		<a href = '#' onclick = "document.getElementById('page02').style.display='none'; document.getElementById('page01').style.display='block';">Back to menu</a>
+		<br><br>
+</div>
+<div id = 'page03' style='display: none'>
+	<h1> Instruktion </h1>
+		<p>Siin peab olema instrukcija</p>
+		<a href = '#' onclick = "document.getElementById('page03').style.display='none'; document.getElementById('page01').style.display='block';">Back to menu</a>
+		<br><br>
+</div>
+<div id = 'page04' style='display: none'>
+	<h1>Top10</h1>
+		<p>1.	<label id="1.">null</label></p>
+		<p>2.	<label id="2.">null</label></p>
+		<p>3.	<label id="3.">null</label></p>
+		<p>4.	<label id="4.">null</label></p>
+		<p>5.	<label id="5.">null</label></p>
+		<p>6.	<label id="6.">null</label></p>
+		<p>7.	<label id="7.">null</label></p>
+		<p>8.	<label id="8.">null</label></p>
+		<p>9.	<label id="9.">null</label></p>
+		<p>10.	<label id="10.">null</label></p>
+		<a href = '#' onclick = "document.getElementById('page04').style.display='none'; document.getElementById('page01').style.display='block';">Back to menu</a>
+		<br><br>
+</div>
+
+
+
