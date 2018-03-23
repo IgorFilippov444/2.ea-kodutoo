@@ -1,21 +1,3 @@
-var id = setInterval("Time()",1000);
-var counter = 0;
-var score = 0;
-function Time(){
-	counter++;
-	if(counter == 5) alert("Game is over! " + counter + " seconds played and your score is " + score), clearInterval(id); 
-	typer.stop();
-}
-
-
-function Name(){
-    var userAdjective = prompt("Please enter your name!");
-    alert (userAdjective); 
-	typer.start();
-	
-}
-
-
 /* TYPER */
 const TYPER = function () {
   if (TYPER.instance_) {
@@ -62,7 +44,7 @@ TYPER.prototype = {
 
         typer.words = structureArrayByWordLength(wordsFromFile)
 
-        
+        typer.start()
       }
     }
 
@@ -74,12 +56,7 @@ TYPER.prototype = {
     this.generateWord()
     this.word.Draw()
 
-
     window.addEventListener('keypress', this.keyPressed.bind(this))
-  },
-  
-  stop : function() {
-	  
   },
 
   generateWord: function () {
@@ -95,7 +72,6 @@ TYPER.prototype = {
 
     if (letter === this.word.left.charAt(0)) {
       this.word.removeFirstLetter()
-	  score++;
 
       if (this.word.left.length === 0) {
         this.guessedWords += 1
