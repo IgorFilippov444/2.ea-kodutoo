@@ -1,17 +1,37 @@
 let date = new Date();
 let time = date.getTime()/1000;
-setInterval(function(){
-	let date2 = new Date();
-	let time2 = date2.getTime()/1000;
-	document.getElementById('clock').innerHTML = time2-time;
-	if ((time2-time)>5){
-		alert("Tere!");
-		time = date2.getTime()/1000
-		typer.start()
-	}
-}, 10) ;
+
+function Interval(){
+let myTimer = setInterval(function(){
+		let date2 = new Date();
+		let time2 = date2.getTime()/1000;
+		document.getElementById('clock').innerHTML = time2-time;
+		if ((time2-time)>5){
+			//alert("Tere!");
+			clearInterval(myTimer);
+		}
+	}, 10) ;
+}
+
+function promptMe(){
+	date = new Date();
+	time = date.getTime()/1000;
+	typer.start();
+	Interval();
+	//document.getElementById('clock').innerHTML = time2-time;
+	//document.getElementById("clock").reset();
+	//time = date2.getTime()/1000;
+}
+
 
 //var seconds = new Date().getTime()/1000
+//  window.setInterval(function () {
+//    updateClock()
+//  }, 1000)
+//}
+
+//function updateClock() {
+ // const date = new Date()
 
 
 
