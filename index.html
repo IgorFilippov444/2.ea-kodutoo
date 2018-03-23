@@ -1,6 +1,6 @@
 <div id = 'page01'>
 	<h1>Menu</h1>
-		<a href = '#' onclick = "document.getElementById('page01').style.display='none'; document.getElementById('page02').style.display='block';">Start game</a><br>
+		<a href = '#' onclick = "document.getElementById('page01').style.display='none'; document.getElementById('page02').style.display='block';promptMe()">Start game</a><br>
 		<a href = '#' onclick = "document.getElementById('page01').style.display='none'; document.getElementById('page03').style.display='block';">Instruktion</a><br>
 		<a href = '#' onclick = "document.getElementById('page01').style.display='none'; document.getElementById('page04').style.display='block';">Top10</a><br>
 		<div class="name" id="name">Name:
@@ -10,8 +10,10 @@
 <div id = 'page02' style='display: none'>
 	<h1>Typer</h1>
 		</style>
+		<button id="bgnBtn" onclick="promptMe()">Start Game</button>
 		<script src="app.js"></script>
-		<div id="clock"></div>
+		<div id="clock"></div> 
+		<div id="score"></div>
 		<canvas></canvas>
 		<a href = '#' onclick = "document.getElementById('page02').style.display='none'; document.getElementById('page01').style.display='block';">Back to menu</a>
 		<br><br>

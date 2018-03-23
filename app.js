@@ -1,19 +1,22 @@
 let date = new Date();
 let time = date.getTime()/1000;
+let counter = 0;
 
 function Interval(){
 let myTimer = setInterval(function(){
 		let date2 = new Date();
 		let time2 = date2.getTime()/1000;
-		document.getElementById('clock').innerHTML = time2-time;
-		if ((time2-time)>5){
-			//alert("Tere!");
+		document.getElementById('clock').innerHTML = "Your time is " + Math.round(time2-time) + "/60";
+		document.getElementById('score').innerHTML = "Your score is " + counter;
+		if ((time2-time)>60){
+			alert("Your scoor is "+ counter);
 			clearInterval(myTimer);
 		}
 	}, 10) ;
 }
 
 function promptMe(){
+	counter = 0
 	date = new Date();
 	time = date.getTime()/1000;
 	typer.start();
@@ -109,6 +112,7 @@ TYPER.prototype = {
 
     if (letter === this.word.left.charAt(0)) {
       this.word.removeFirstLetter()
+	  counter ++;
 
       if (this.word.left.length === 0) {
         this.guessedWords += 1
