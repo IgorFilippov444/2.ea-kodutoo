@@ -1,9 +1,14 @@
-const date = new Date();
-const time = date.getTime()/1000;
+let date = new Date();
+let time = date.getTime()/1000;
 setInterval(function(){
-	var date2 = new Date();
-	var time2 = date2.getTime()/1000;
+	let date2 = new Date();
+	let time2 = date2.getTime()/1000;
 	document.getElementById('clock').innerHTML = time2-time;
+	if ((time2-time)>5){
+		alert("Tere!");
+		time = date2.getTime()/1000
+		typer.start()
+	}
 }, 10) ;
 
 //var seconds = new Date().getTime()/1000
