@@ -1,9 +1,9 @@
+const date = new Date();
+const time = date.getTime()/1000;
 setInterval(function(){
-	var date = new Date();
-	var format = [
-	(date.getTime()/1000 ? "0"+date.getTime():dategetTime())
-	].join(":");
-	document.getElementById('clock').innerHTML = format;
+	var date2 = new Date();
+	var time2 = date2.getTime()/1000;
+	document.getElementById('clock').innerHTML = time2-time;
 }, 10) ;
 
 //var seconds = new Date().getTime()/1000
