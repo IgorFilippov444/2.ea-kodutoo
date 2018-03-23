@@ -1,3 +1,15 @@
+setInterval(function(){
+	var date = new Date();
+	var format = [
+	(date.getTime()/1000 ? "0"+date.getTime():dategetTime())
+	].join(":");
+	document.getElementById('clock').innerHTML = format;
+}, 10) ;
+
+//var seconds = new Date().getTime()/1000
+
+
+
 /* TYPER */
 const TYPER = function () {
   if (TYPER.instance_) {
