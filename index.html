@@ -6,12 +6,13 @@
 		<link rel="stylesheet" type="text/css" href="typerstyle.css">
 		<title>Typer</title>
 	</head>
-	<body>
+	<body id="body" class="dark-mode">
 		<div id = 'page01'>
 			<h1 class="nomarginbelow">Menu</h1>
 				<a href = '#' onclick = "document.getElementById('page01').style.display='none'; document.getElementById('page02').style.display='block';promptMe()">Start game</a><br>
 				<a href = '#' onclick = "document.getElementById('page01').style.display='none'; document.getElementById('page03').style.display='block';">Instruktsioon</a><br>
 				<a href = '#' onclick = "document.getElementById('page01').style.display='none'; document.getElementById('page04').style.display='block';">Top10</a><br>
+				<button type="button" name="dark_light" onclick="toggleDarkLight()" title="Vajuta" id = 'h2'>Dark/Light mode</button>
 				<div class="name" id="name">Name:<br><input type="text" id="nameText"></div>
 		</div>
 		<div id = 'page02' style='display: none'>

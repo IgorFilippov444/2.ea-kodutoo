@@ -9,6 +9,9 @@ h1 {
 .nomarginbelow {
      margin-bottom:0;
 }
+#h2 {
+	font-family: 'Cousine';font-size: 36px;
+}
 
 #page01 {
 	position:fixed;
@@ -64,11 +67,6 @@ h1 {
 	border-radius: 2px;
 }
 
-#bgnBtn:hover {
-    background-color: #555555;
-    color: white;
-}
-
 a {
 	color: black;
 }
@@ -109,3 +107,65 @@ input[type=text] {
 	font-size:36px;
 	font-family: Cousine;
 }
+body.dark-mode {
+	background-color: #666666;
+	color: white;
+}
+body.dark-mode a {
+	color: #ffffff;
+}
+body.dark-mode button {
+	background-color: #666666;
+	color: white;
+}
+body.dark-mode #nameText {
+	background-color: #666666;
+	color: white;
+	border-bottom: 2px solid white;
+}
+body.dark-mode #bgnBtn {
+    background-color: #666666;
+	color: white;
+	border-color: white;
+}
+
+body.dark-mode #bgnBtn:hover  {
+	background-color: white;
+    color: black;
+}
+
+body.light-mode {
+	background-color: #ffffff;
+	color: black;
+}
+body.light-mode a {
+	color: black;
+}
+body.light-mode button {
+	background-color: white;
+	color: black;
+}
+
+body.light-mode #nameText {
+	background-color: white;
+	color: black;
+	border-bottom: 2px solid black;
+}
+body.light-mode #bgnBtn:hover  {
+	background-color: #555555;
+    color: white;
+}
+
+body.light-mode #bgnBtn {
+    background-color: white;
+	color: black;
+	border-color: black;
+}
+
+body.light-mode #bgnBtn:hover  {
+	background-color: black;
+    color: white;
+}
+
+
+
