@@ -1,0 +1,111 @@
+h1 {
+    font-family: 'Cousine';font-size: 60px;
+}
+
+.nomarginabove {
+     margin-top:0;
+}
+
+.nomarginbelow {
+     margin-bottom:0;
+}
+
+#page01 {
+	position:fixed;
+	top: 50%;
+	left: 50%;
+	text-align: center;
+	transform: translate(-50%, -50%);
+	font-family: 'Cousine';font-size: 36px;
+}
+
+#page02 {
+	position:fixed;
+	top: 70%;
+	left: 50%;
+	text-align: center;
+	transform: translate(-50%, -50%);
+	font-family: 'Cousine';font-size: 36px;
+}
+
+#page03 {
+	position:fixed;
+	top: 50%;
+	left: 50%;
+	text-align: center;
+	transform: translate(-50%, -50%);
+	font-family: 'Cousine';font-size: 36px;
+}
+
+#page04 {
+	position:fixed;
+	top: 50%;
+	left: 50%;
+	text-align: center;
+	transform: translate(-50%, -50%);
+	font-family: 'Cousine';font-size: 36px;
+}
+
+.content01 {
+	position:fixed;
+	bottom: 30%;
+	left: 50%;
+	text-align: center;
+	transform: translate(-50%, -50%);
+}
+
+#bgnBtn {
+    background-color: white;
+    color: black;
+    border: 2px solid #555555;
+	width: 250px;
+	font-family: Cousine;
+	font-size: 28px;
+	border-radius: 2px;
+}
+
+#bgnBtn:hover {
+    background-color: #555555;
+    color: white;
+}
+
+a {
+	color: black;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:active {
+    text-decoration: underline;
+}
+
+::-moz-selection { /* Code for Firefox */
+    color: #ff9933;
+	background: blue;
+}
+
+::selection {
+    color: #ff9933;
+	background: blue;
+}
+
+input[type=text] {
+    width: 260px;
+    padding: 2px 8px;
+    margin: 0px 0;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid black;
+	font-size:36px;
+	font-family: Cousine;
+}

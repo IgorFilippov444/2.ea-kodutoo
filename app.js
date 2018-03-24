@@ -68,8 +68,8 @@ TYPER.prototype = {
     this.canvas.style.width = this.WIDTH + 'px'
     this.canvas.style.height = this.HEIGHT + 'px'
 
-    this.canvas.width = this.WIDTH * 2
-    this.canvas.height = this.HEIGHT * 2
+    this.canvas.width = this.WIDTH * 1
+    this.canvas.height = this.HEIGHT * 1
 
     this.loadWords()
   },
@@ -139,7 +139,7 @@ Word.prototype = {
 
     this.ctx.textAlign = 'center'
     this.ctx.font = '140px Courier'
-    this.ctx.fillText(this.left, this.canvas.width / 2, this.canvas.height / 2)
+    this.ctx.fillText(this.left, this.canvas.width / 2, this.canvas.height / 3.5)
   },
 
   removeFirstLetter: function () {
