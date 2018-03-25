@@ -14,28 +14,14 @@ let myTimer = setInterval(function(){
 		}
 	}, 10) ;
 }
-
+//https://stackoverflow.com/questions/37287093/starting-a-javascript-prompt-after-a-button-is-clicked
 function promptMe(){
 	counter = 0
 	date = new Date();
 	time = date.getTime()/1000;
 	typer.start();
 	Interval();
-	//document.getElementById('clock').innerHTML = time2-time;
-	//document.getElementById("clock").reset();
-	//time = date2.getTime()/1000;
 }
-
-
-//var seconds = new Date().getTime()/1000
-//  window.setInterval(function () {
-//    updateClock()
-//  }, 1000)
-//}
-
-//function updateClock() {
- // const date = new Date()
-
 
 
 /* TYPER */
