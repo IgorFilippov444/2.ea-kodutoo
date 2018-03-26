@@ -1,7 +1,8 @@
 let date = new Date();
 let time = date.getTime()/1000;
 let counter = 0;
-let NameLS = 'score'
+let NameLS = 'score';
+let NameLSName = 'scoreN';
 
 // Check browser support
 //if (typeof(Storage) !== "undefined") {
@@ -21,14 +22,16 @@ let myTimer = setInterval(function(){
 		document.getElementById('clock').innerHTML = "Your time is " + Math.round(time2-time) + "/60";
 		document.getElementById('score').innerHTML = "Your score is " + counter;
 		document.getElementById('ClickPerSecond').innerHTML = "Click per second: " + Number((counter/(time2-time)).toFixed(3));
-		if ((time2-time)>60){
+		if ((time2-time)>5){
 			for (var i = 1; i < 11; i++) {
 				if (((Number((counter/(time2-time)).toFixed(2)) > localStorage.getItem(NameLS + i)))){
 					
 					for (var p = 2; p < (11-i); p++) {
 						localStorage.setItem(NameLS + (11-p),localStorage.getItem(NameLS + (10-p)));
+						localStorage.setItem(NameLSName + (11-p),localStorage.getItem(NameLSName + (10-p)));
 					}
 					localStorage.setItem(NameLS + i,Number((counter/(time2-time)).toFixed(3)));
+					localStorage.setItem(NameLSName + i,document.getElementById('nameText').value);
 					break;
 				}
 				
@@ -48,16 +51,16 @@ function promptMe(){
 }
 
 function promptMe2(){
-	document.getElementById('Score01').innerHTML = localStorage.getItem('score1');
-	document.getElementById('Score02').innerHTML = localStorage.getItem('score2');
-	document.getElementById('Score03').innerHTML = localStorage.getItem('score3');
-	document.getElementById('Score04').innerHTML = localStorage.getItem('score4');
-	document.getElementById('Score05').innerHTML = localStorage.getItem('score5');
-	document.getElementById('Score06').innerHTML = localStorage.getItem('score6');
-	document.getElementById('Score07').innerHTML = localStorage.getItem('score7');
-	document.getElementById('Score08').innerHTML = localStorage.getItem('score8');
-	document.getElementById('Score09').innerHTML = localStorage.getItem('score9');
-	document.getElementById('Score10').innerHTML = localStorage.getItem('score10');
+	document.getElementById('Score01').innerHTML = localStorage.getItem('score1') + " by " + localStorage.getItem('scoreN1');
+	document.getElementById('Score02').innerHTML = localStorage.getItem('score2') + " by " + localStorage.getItem('scoreN2');
+	document.getElementById('Score03').innerHTML = localStorage.getItem('score3') + " by " + localStorage.getItem('scoreN3');
+	document.getElementById('Score04').innerHTML = localStorage.getItem('score4') + " by " + localStorage.getItem('scoreN4');
+	document.getElementById('Score05').innerHTML = localStorage.getItem('score5') + " by " + localStorage.getItem('scoreN5');
+	document.getElementById('Score06').innerHTML = localStorage.getItem('score6') + " by " + localStorage.getItem('scoreN6');
+	document.getElementById('Score07').innerHTML = localStorage.getItem('score7') + " by " + localStorage.getItem('scoreN7');
+	document.getElementById('Score08').innerHTML = localStorage.getItem('score8') + " by " + localStorage.getItem('scoreN8');
+	document.getElementById('Score09').innerHTML = localStorage.getItem('score9') + " by " + localStorage.getItem('scoreN9');
+	document.getElementById('Score10').innerHTML = localStorage.getItem('score10') + " by " + localStorage.getItem('scoreN10');
 }
 
 
