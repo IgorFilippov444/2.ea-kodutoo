@@ -2,8 +2,8 @@
 
 Mängu eesmärk on võimalikult kiiresti ekraanile tekkivaid sõnu ära trükkida. Sõnad on võetud [Eesti Keele Instituudi lehelt](http://www.eki.ee/tarkvara/wordlist/) – [lemmad2013](http://www.eki.ee/tarkvara/wordlist/lemmad2013.txt). Aluseks tuleb võtta kood **[eesrakenduste-arendamine-2018k/klahvimine](https://github.com/eesrakenduste-arendamine-2018k/klahvimine)**. 
 
-Autorite nimed: Konstantin Blinkov, Igor Filippov ja Valeri Valentinov
-Skoori moodustamise kirjeldus: Iga täht annab ühe punkti. Tulemuseks on aga näidatu, mitu tähte mängija suudab keskmiselt ühe sekundi jooksul sisestada.
+* Autorite nimed: Konstantin Blinkov, Igor Filippov ja Valeri Valentinov.
+* Skoori moodustamise kirjeldus: Iga täht annab ühe punkti. Tulemuseks on aga näidatud, mitu tähte mängija suudab keskmiselt ühe sekundi jooksul sisestada.
 
 ### Tähtpäev 26.03.2018 23:59
 
