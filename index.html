@@ -11,7 +11,7 @@
 			<h1 class="nomarginbelow">Menu</h1>
 			<a href = '#' onclick = "document.getElementById('page01').style.display='none'; document.getElementById('page02').style.display='block';promptMe()">Start game</a><br>
 			<a href = '#' onclick = "document.getElementById('page01').style.display='none'; document.getElementById('page03').style.display='block';">Instruktsioon</a><br>
-			<a href = '#' onclick = "document.getElementById('page01').style.display='none'; document.getElementById('page04').style.display='block';">Top10</a><br>
+			<a href = '#' onclick = "document.getElementById('page01').style.display='none'; document.getElementById('page04').style.display='block';promptMe2()">Top10</a><br>
 			<button type="button" name="dark_light" onclick="toggleDarkLight()" title="Vajuta" id = 'h2'>Dark/Light mode</button>
 			<div class="name" id="name">Name:<br><input type="text" id="nameText"></div>
 		</div>
@@ -34,16 +34,16 @@
 		</div>
 		<div id = 'page04' style='display: none'>
 			<h1>Top10</h1>
-			<p>1.	<label id="1.">null</label></p>
-			<p>2.	<label id="2.">null</label></p>
-			<p>3.	<label id="3.">null</label></p>
-			<p>4.	<label id="4.">null</label></p>
-			<p>5.	<label id="5.">null</label></p>
-			<p>6.	<label id="6.">null</label></p>
-			<p>7.	<label id="7.">null</label></p>
-			<p>8.	<label id="8.">null</label></p>
-			<p>9.	<label id="9.">null</label></p>
-			<p>10.	<label id="10.">null</label></p>
+			<div id="Score01"></div> 
+			<div id="Score02"></div> 
+			<div id="Score03"></div> 
+			<div id="Score04"></div> 
+			<div id="Score05"></div> 
+			<div id="Score06"></div> 
+			<div id="Score07"></div> 
+			<div id="Score08"></div> 
+			<div id="Score09"></div> 
+			<div id="Score10"></div> 
 			<a href = '#' onclick = "document.getElementById('page04').style.display='none'; document.getElementById('page01').style.display='block';">Back to menu</a>
 			<br><br>
 		</div>
