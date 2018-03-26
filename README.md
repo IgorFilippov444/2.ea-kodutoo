@@ -4,6 +4,7 @@ Mängu eesmärk on võimalikult kiiresti ekraanile tekkivaid sõnu ära trükkid
 
 * Autorite nimed: Konstantin Blinkov, Igor Filippov ja Valeri Valentinov.
 * Skoori moodustamise kirjeldus: Iga täht annab ühe punkti. Tulemuseks on aga näidatud, mitu tähte mängija suudab keskmiselt ühe sekundi jooksul sisestada.
+* Veebilehe aadress: http://greeny.cs.tlu.ee/~valevale/eesrakendused/2.ea-kodutoo/ või http://localhost:5555/~valevale/eesrakendused/2.ea-kodutoo/#
 
 ### Tähtpäev 26.03.2018 23:59
 
