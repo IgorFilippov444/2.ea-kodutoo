@@ -108,23 +108,23 @@ input[type=text] {
 	font-family: Cousine;
 }
 body.dark-mode {
-	background-color: #666666;
+	background-color: #404040;
 	color: white;
 }
 body.dark-mode a {
 	color: #ffffff;
 }
 body.dark-mode button {
-	background-color: #666666;
+	background-color: #404040;
 	color: white;
 }
 body.dark-mode #nameText {
-	background-color: #666666;
+	background-color: #404040;
 	color: white;
 	border-bottom: 2px solid white;
 }
 body.dark-mode #bgnBtn {
-    background-color: #666666;
+    background-color: #404040;
 	color: white;
 	border-color: white;
 }
@@ -166,6 +166,3 @@ body.light-mode #bgnBtn:hover  {
 	background-color: black;
     color: white;
 }
-
-
-

@@ -6,7 +6,7 @@
 		<link rel="stylesheet" type="text/css" href="typerstyle.css">
 		<title>Typer</title>
 	</head>
-	<body id="body" class="dark-mode">
+	<body id="body" class="light-mode">
 		<div id = 'page01'>
 			<h1 class="nomarginbelow">Menu</h1>
 			<a href = '#' onclick = "document.getElementById('page01').style.display='none'; document.getElementById('page02').style.display='block';promptMe()">Start game</a><br>
@@ -18,7 +18,7 @@
 		<div id = 'page02' style='display: none'>
 			<h1>Typer</h1>
 			<script src="app.js"></script>
-			<div id="clock"></div> 
+			<div id="clock"></div>
 			<div id="score"></div>
 			<div id="ClickPerSecond"></div>
 			<button id="bgnBtn" onclick="promptMe()">Start Game</button>
@@ -28,27 +28,27 @@
 		</div>
 		<div id = 'page03' style='display: none'>
 			<h1>Instruktsioon</h1>
-			<p>Siin peab olema instruktsioon</p>
+			<p>1. Kirjutada maksimaalselt kiiresti 20 sekundi jooksul</p>
+			<p>2. Iga täht annab 1 punkti</p>
+			<p>3. Skooriks on kirjutatud tähtede arv sekundis</p>
 			<a href = '#' onclick = "document.getElementById('page03').style.display='none'; document.getElementById('page01').style.display='block';">Back to menu</a>
 			<br><br>
 		</div>
 		<div id = 'page04' style='display: none'>
 			<h1>Top10</h1>
-			<div id="Score01"></div> 
-			<div id="Score02"></div> 
-			<div id="Score03"></div> 
-			<div id="Score04"></div> 
-			<div id="Score05"></div> 
-			<div id="Score06"></div> 
-			<div id="Score07"></div> 
-			<div id="Score08"></div> 
-			<div id="Score09"></div> 
-			<div id="Score10"></div> 
+			<div id="Score01"></div>
+			<div id="Score02"></div>
+			<div id="Score03"></div>
+			<div id="Score04"></div>
+			<div id="Score05"></div>
+			<div id="Score06"></div>
+			<div id="Score07"></div>
+			<div id="Score08"></div>
+			<div id="Score09"></div>
+			<div id="Score10"></div>
+			<br>
 			<a href = '#' onclick = "document.getElementById('page04').style.display='none'; document.getElementById('page01').style.display='block';">Back to menu</a>
 			<br><br>
 		</div>
 	</body>
 </html>
-
-
-

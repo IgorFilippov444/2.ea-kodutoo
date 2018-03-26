@@ -19,13 +19,13 @@ function Interval(){
 let myTimer = setInterval(function(){
 		let date2 = new Date();
 		let time2 = date2.getTime()/1000;
-		document.getElementById('clock').innerHTML = "Your time is " + Math.round(time2-time) + "/60";
+		document.getElementById('clock').innerHTML = "Your time is " + Math.round(time2-time) + "/20";
 		document.getElementById('score').innerHTML = "Your score is " + counter;
 		document.getElementById('ClickPerSecond').innerHTML = "Click per second: " + Number((counter/(time2-time)).toFixed(3));
-		if ((time2-time)>5){
+		if ((time2-time)>20){
 			for (var i = 1; i < 11; i++) {
 				if (((Number((counter/(time2-time)).toFixed(2)) > localStorage.getItem(NameLS + i)))){
-					
+
 					for (var p = 2; p < (11-i); p++) {
 						localStorage.setItem(NameLS + (11-p),localStorage.getItem(NameLS + (10-p)));
 						localStorage.setItem(NameLSName + (11-p),localStorage.getItem(NameLSName + (10-p)));
@@ -34,7 +34,7 @@ let myTimer = setInterval(function(){
 					localStorage.setItem(NameLSName + i,document.getElementById('nameText').value);
 					break;
 				}
-				
+
 			}
 			clearInterval(myTimer);
 			alert("Your scoor is "+ counter);
