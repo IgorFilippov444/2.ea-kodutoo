@@ -8,6 +8,7 @@ let myTimer = setInterval(function(){
 		let time2 = date2.getTime()/1000;
 		document.getElementById('clock').innerHTML = "Your time is " + Math.round(time2-time) + "/60";
 		document.getElementById('score').innerHTML = "Your score is " + counter;
+		document.getElementById('ClickPerSecond').innerHTML = "Click per second: " + Number((counter/(time2-time)).toFixed(2));
 		if ((time2-time)>60){
 			alert("Your scoor is "+ counter);
 			clearInterval(myTimer);
