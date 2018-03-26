@@ -107,6 +107,8 @@ input[type=text] {
 	font-size:36px;
 	font-family: Cousine;
 }
+
+/* dark/light mode some elements are from: https://codepen.io/HarlemSquirrel/pen/NdMebZ */
 body.dark-mode {
 	background-color: #404040;
 	color: white;

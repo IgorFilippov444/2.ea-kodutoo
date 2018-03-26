@@ -37,7 +37,7 @@ let myTimer = setInterval(function(){
 
 			}
 			clearInterval(myTimer);
-			alert("Your scoor is "+ counter);
+			alert("Game ended");
 		}
 	}, 10) ;
 }
@@ -192,6 +192,7 @@ window.onload = function () {
   window.typer = typer
 }
 
+/*dark/light mode https://codepen.io/HarlemSquirrel/pen/NdMebZ*/
 function toggleDarkLight() {
   var body = document.getElementById("body");
   var currentClass = body.className;
