@@ -4,17 +4,6 @@ let counter = 0;
 let NameLS = 'score';
 let NameLSName = 'scoreN';
 
-// Check browser support
-//if (typeof(Storage) !== "undefined") {
-    // Store
-//    localStorage.setItem("lastname", "Smith");
-    // Retrieve
-//    document.getElementById("Score01").innerHTML = localStorage.getItem("lastname");
-//} else {
-//    document.getElementById("Score01").innerHTML = "Sorry, your browser does not support Web Storage...";
-//}
-
-
 function Interval(){
 let myTimer = setInterval(function(){
 		let date2 = new Date();
@@ -24,8 +13,8 @@ let myTimer = setInterval(function(){
 		document.getElementById('ClickPerSecond').innerHTML = "Click per second: " + Number((counter/(time2-time)).toFixed(3));
 		if ((time2-time)>20){
 			for (var i = 1; i < 11; i++) {
+				//https://www.w3schools.com/jsref/prop_win_localstorage.asp
 				if (((Number((counter/(time2-time)).toFixed(2)) > localStorage.getItem(NameLS + i)))){
-
 					for (var p = 2; p < (11-i); p++) {
 						localStorage.setItem(NameLS + (11-p),localStorage.getItem(NameLS + (10-p)));
 						localStorage.setItem(NameLSName + (11-p),localStorage.getItem(NameLSName + (10-p)));
@@ -34,7 +23,6 @@ let myTimer = setInterval(function(){
 					localStorage.setItem(NameLSName + i,document.getElementById('nameText').value);
 					break;
 				}
-
 			}
 			clearInterval(myTimer);
 			alert("Game ended");
@@ -62,7 +50,6 @@ function promptMe2(){
 	document.getElementById('Score09').innerHTML = localStorage.getItem('score9') + " by " + localStorage.getItem('scoreN9');
 	document.getElementById('Score10').innerHTML = localStorage.getItem('score10') + " by " + localStorage.getItem('scoreN10');
 }
-
 
 /* TYPER */
 const TYPER = function () {
