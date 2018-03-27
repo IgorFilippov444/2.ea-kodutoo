@@ -4,6 +4,15 @@ let counter = 0;
 let NameLS = 'score';
 let NameLSName = 'scoreN';
 
+function CheckLH(){
+	for (var t = 1; t < 11; t++) {
+		if ((localStorage.getItem(NameLS + t)) == 'null' || (localStorage.getItem(NameLS + t)) == 0 ){
+			localStorage.setItem(NameLS + t,0);
+			localStorage.setItem(NameLSName + t,"no one");
+		}
+	}
+}
+
 function Interval(){
 let myTimer = setInterval(function(){
 		let date2 = new Date();
@@ -14,20 +23,21 @@ let myTimer = setInterval(function(){
 		if ((time2-time)>20){
 			for (var i = 1; i < 11; i++) {
 				//https://www.w3schools.com/jsref/prop_win_localstorage.asp
-				if (((Number((counter/(time2-time)).toFixed(2)) > localStorage.getItem(NameLS + i)))){
-					for (var p = 2; p < (11-i); p++) {
+				if (((Number((counter/(time2-time)).toFixed(3)) > localStorage.getItem(NameLS + i)))){
+					for (var p = 1; p < (11-i); p++) {
 						localStorage.setItem(NameLS + (11-p),localStorage.getItem(NameLS + (10-p)));
 						localStorage.setItem(NameLSName + (11-p),localStorage.getItem(NameLSName + (10-p)));
 					}
 					localStorage.setItem(NameLS + i,Number((counter/(time2-time)).toFixed(3)));
 					localStorage.setItem(NameLSName + i,document.getElementById('nameText').value);
+					counter = 0;
 					break;
 				}
 			}
 			clearInterval(myTimer);
 			alert("Game ended");
 		}
-	}, 10) ;
+	}, 1) ;
 }
 //https://stackoverflow.com/questions/37287093/starting-a-javascript-prompt-after-a-button-is-clicked
 function promptMe(){
@@ -39,6 +49,7 @@ function promptMe(){
 }
 
 function promptMe2(){
+	CheckLH();
 	document.getElementById('Score01').innerHTML = localStorage.getItem('score1') + " by " + localStorage.getItem('scoreN1');
 	document.getElementById('Score02').innerHTML = localStorage.getItem('score2') + " by " + localStorage.getItem('scoreN2');
 	document.getElementById('Score03').innerHTML = localStorage.getItem('score3') + " by " + localStorage.getItem('scoreN3');
